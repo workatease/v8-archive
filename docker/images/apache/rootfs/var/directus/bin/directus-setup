@@ -28,10 +28,10 @@ function cmd_install_composer() {
 # Prestissimo
 #
 
-function cmd_install_prestissimo() {
-  echo "Installing prestissimo..."
-  composer global require hirak/prestissimo
-}
+# function cmd_install_prestissimo() {
+#   echo "Installing prestissimo..."
+#   composer global require hirak/prestissimo
+# }
 
 #
 # Dependencies
@@ -81,7 +81,7 @@ function cmd_configure_php() {
 
 function cmd_initial() {
   cmd_install_composer
-  cmd_install_prestissimo
+#  cmd_install_prestissimo
   cmd_configure_apache
   cmd_configure_php
 }
