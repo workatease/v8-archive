@@ -43,7 +43,6 @@ COPY --chown=www-data:www-data ./directus/ /var/directus/
 #
 WORKDIR /var/directus
 RUN \
-  directus-setup backup-volumes && \
   directus-setup install-dependencies && \
   composer require aws/aws-sdk-php && \
   composer require league/flysystem-aws-s3-v3 && \
